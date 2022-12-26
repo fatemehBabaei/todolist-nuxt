@@ -16,10 +16,9 @@ export default defineNuxtConfig({
         pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
     },
     modules: ["@pinia/nuxt", "@vueuse/nuxt"],
-    // runtimeConfig: {
-    //     public: {
-    //         baseURL:
-    //             "https://fatemehbabaei.github.io/todolist-nuxt/todolist/app-nuxt/dist/",
-    //     },
-    // },
+    runtimeConfig: {
+        public: {
+            baseURL: "https://fatemehbabaei.github.io",
+        },
+    },
 });
