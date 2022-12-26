@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         "~/assets/styles/master.scss",
     ],
     app: {
-        baseURL: "/todolist-nuxt\todolistapp-nuxtdist/",
+        baseURL: "/todolist-nuxt/todolist/app-nuxt/dist/",
     },
     build: {
         transpile: ["vuetify"],
@@ -16,9 +16,9 @@ export default defineNuxtConfig({
         pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
     },
     modules: ["@pinia/nuxt", "@vueuse/nuxt"],
-    runtimeConfig: {
-        public: {
-            baseURL: "https://fatemehbabaei.github.io",
-        },
-    },
+    // runtimeConfig: {
+    //     public: {
+    //         baseURL: "https://fatemehbabaei.github.io",
+    //     },
+    // },
 });
