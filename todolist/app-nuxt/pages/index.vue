@@ -73,7 +73,7 @@ form {
     margin: 50px auto;
     display: flex;
     gap: 10px;
-    width: 50%;
+    width: min(700px, 100%);
     box-shadow: 12px 12px 2px 1px rgba(166, 167, 175, 0.8);
     color: #000;
     .form-control {
@@ -99,9 +99,6 @@ form {
     }
 }
 @media screen and (max-width: 768px) {
-    form {
-        width: 90%;
-    }
     .head-description {
         font-size: 1rem;
     }
