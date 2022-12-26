@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             baseURL:
-                "https://fatemehbabaei.github.io/todolist-nuxt/todolist/app-nuxt/dist/",
+                "https://github.com/fatemehBabaei/todolist-nuxt/tree/main/todolist/app-nuxt/dist",
         },
     },
 });
