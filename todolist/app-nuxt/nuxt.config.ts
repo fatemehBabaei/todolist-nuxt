@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         "~/assets/styles/master.scss",
     ],
     app: {
-        baseURL: "/todolist-nuxt/todolist/app-nuxt/dist/",
+        baseURL: "/todolist/app-nuxt/dist/",
     },
     build: {
         transpile: ["vuetify"],
