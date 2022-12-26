@@ -6,9 +6,7 @@ export default defineNuxtConfig({
         "@mdi/font/css/materialdesignicons.min.css",
         "~/assets/styles/master.scss",
     ],
-    app: {
-        baseURL: "/todolist/app-nuxt/dist/",
-    },
+    
     build: {
         transpile: ["vuetify"],
     },
