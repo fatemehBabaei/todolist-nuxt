@@ -37,7 +37,8 @@
                         <tbody>
                             <tr v-for="(item, index) in todos" :key="index">
                                 <td class="text-center">
-                                    <v-checkbox style="min-width: 200px"
+                                    <v-checkbox
+                                        style="min-width: 200px"
                                         class="checkbox text-center"
                                         @click="checkTask(item, index)"
                                         :id="index"
@@ -262,5 +263,10 @@ export default {
 }
 .v-slide-group .v-slide-group__container .v-slide-group__content {
     justify-content: center !important;
+}
+@media screen and (max-width: 768px) {
+    .task-container {
+        width: 90%;
+    }
 }
 </style>

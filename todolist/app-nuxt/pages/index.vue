@@ -98,4 +98,15 @@ form {
         background-color: #bcaeff;
     }
 }
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+    .head-description {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
 </style>
