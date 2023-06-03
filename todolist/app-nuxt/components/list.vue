@@ -7,6 +7,7 @@
                 >not Complete</v-tab
             >
         </v-tabs>
+
         <v-card-text>
             <v-window v-model="tab">
                 <v-window-item value="all">
@@ -195,21 +196,10 @@ export default {
             if (event.target.checked) {
                 item.status = "true";
                 this.value = "true";
-                if (index != null) {
-                    this.completeTodo.splice(index, 1);
-                }
-                // this.listStore.update(this.todos);
             } else {
                 item.status = "false";
                 this.value = "false";
-                if (index != null) {
-                    this.notCompleteTodo.splice(index, 1);
-                }
-                // this.listStore.update(this.todos);
             }
-            console.log(this.completeTodo);
-            this.notCompleteFilter();
-            this.completeFilter();
         },
         async deleteItem(index) {
             if (index != null) {
@@ -222,17 +212,15 @@ export default {
             this.listStore.update(this.todos);
         },
         async completeFilter() {
-            this.completeTodo = this.todos.filter(
-                (item) => item.status == true
-            );
-            // this.completeTodo = complete;
+            const complete = this.todos.filter((item) => item.status == true);
+            this.completeTodo = complete;
             // console.log(this.completeTodo);
         },
         async notCompleteFilter() {
-            this.notCompleteTodo = this.todos.filter(
+            const notComplete = this.todos.filter(
                 (item) => item.status == false
             );
-            // this.notCompleteTodo = notComplete;
+            this.notCompleteTodo = notComplete;
             // console.log(this.notCompleteTodo);
         },
     },
@@ -267,7 +255,7 @@ export default {
     }
 }
 .tab-head {
-    background-color: #ffff;
+    background-color: #bcaeff;
     // color: #523fad;
     font-family: Raleway;
     font-size: 1rem;
